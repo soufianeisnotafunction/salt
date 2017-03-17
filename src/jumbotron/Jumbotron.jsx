@@ -7,22 +7,22 @@ const Header = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: ${props => props.image
-        ? 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(' + props.image + '})'
-        : null};
   background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
   `;
 
 const Title = styled.div `
   font-size: 60px;
   font-familty: sans-serif;
+  color: white;
     `;
 
 
 
 const Jumbotron = ({title, height, fullscreen, image}) =>
     (
-      <Header style={fullscreen ? {height:'100vh'} : {height:height}, image ? {backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image}})`} : null}>
+      <Header style={fullscreen ? {height:'100vh'} : {height:height}, image ? {backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`} : null}>
             <Title>{title}</Title>
       </Header>
     );
