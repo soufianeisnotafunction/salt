@@ -1,22 +1,29 @@
-import React from 'react';
 import styled from 'styled-components';
 
-// Create a <Title> react component that renders an <h1> which is
-// centered, palevioletred and sized at 1.5em
+const Button = styled.a`
+  /* Adapt the colors based on primary prop */
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
 
-let columns = 12;
-let column - width : 100 / columns;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
 
-while (columns > 0) {
-    let desk = `.desk-${columns}`;
-    let tab = `.tab-${columns}`;
-    let mob = `.mob-${columns}`;
+  &:hover {
+    background-color: #6FC6FF;
+  };
 
-    columns--;
-}
-
-const Col = styled.div `
-  @media only screen and (min-width: 480px) {
-    ${mob}
+  &:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
   }
+
 `;
+
+export default Button;

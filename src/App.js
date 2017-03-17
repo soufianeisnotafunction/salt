@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import Row from "./row/Row.jsx";
 import Container from "./container/Container.jsx";
 import Col from "./col/Col.jsx";
-import './App.css';
+import Button from './button/Button.jsx'
+
 
 class App extends Component {
     render() {
@@ -12,13 +12,13 @@ class App extends Component {
               <Container>
                 <Row>
                     <Col desk={4} tab={12} mob={12}>
-                        Bonjour
+                        <Button>MICHOU</Button>
                     </Col>
                     <Col desk={4} tab={12} mob={12}>
-                        Bonjour
+                      <Button>MICHOU</Button>
                     </Col>
                     <Col desk={4} tab={12} mob={12}>
-                        Bonjour
+                        <Button>MICHOU</Button>
                     </Col>
                 </Row>
               </Container>
