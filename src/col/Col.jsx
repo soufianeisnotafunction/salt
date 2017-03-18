@@ -10,6 +10,9 @@ const Col = styled.div `
         : window.screen.width >= 960
             ? columnWidth * props.desk + '%'
             : null};
+    display: flex;
+    justify-content: ${props => props.justify ? props.justify : null};
+    align-items: ${props => props.align ? 'center' : null};
   `;
 
 export default Col;
