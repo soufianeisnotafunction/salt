@@ -6,7 +6,7 @@ const Button = styled.a`
   box-shadow: ${props => props.flat ? null :'0px 5px 0px 0px #3C93D5'};
 
   border-radius: 5px;
-  padding: 15px 25px;
+  padding: 12px 25px;
   font-size: 22px;
   text-decoration: none;
   margin: 20px;
@@ -19,9 +19,9 @@ const Button = styled.a`
   };
 
   &:active {
-    transform: ${props => props.flat ? null :'translate(0px, 5px)'};
-    -webkit-transform: ${props => props.flat ? null :'translate(0px, 5px)'};
-    box-shadow: 0px 1px 0px 0px;
+    transform: ${props => props.flat ? null : 'translate(0px, 5px)'};
+    -webkit-transform: ${props => props.flat ? null : 'translate(0px, 5px)'};
+    box-shadow:${props => props.flat ? null : '0px 1px 0px 0px #3C93D5'} ;
   }
 
 `;

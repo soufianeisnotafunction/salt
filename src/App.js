@@ -16,13 +16,13 @@ class App extends Component {
               <Container>
                 <Row>
                     <Col desk={4} tab={12} mob={12}>
-                        <Button flat >MICHOU</Button>
+                        <Button flat >Michou</Button>
                     </Col>
                     <Col desk={4} tab={12} mob={12}>
-                      <Button flat >MICHOU</Button>
+                      <Button flat >Michou</Button>
                     </Col>
                     <Col desk={4} tab={12} mob={12}>
-                        <Button flat >MICHOU</Button>
+                        <Button flat >Michou</Button>
                     </Col>
                 </Row>
               </Container>
