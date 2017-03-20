@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Button = styled.a`
   /* Adapt the colors based on primary prop */
   background-color: #55acee;
-  box-shadow: 0px 5px 0px 0px #3C93D5;
+  box-shadow: ${props => props.flat ? null :'0px 5px 0px 0px #3C93D5'};
 
   border-radius: 5px;
   padding: 15px 25px;
@@ -19,8 +19,8 @@ const Button = styled.a`
   };
 
   &:active {
-    transform: translate(0px, 5px);
-    -webkit-transform: translate(0px, 5px);
+    transform: ${props => props.flat ? null :'translate(0px, 5px)'};
+    -webkit-transform: ${props => props.flat ? null :'translate(0px, 5px)'};
     box-shadow: 0px 1px 0px 0px;
   }
 
