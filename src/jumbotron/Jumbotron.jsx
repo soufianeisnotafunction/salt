@@ -6,7 +6,7 @@ width: 100%;
 background-color: #6FC6FF;
 background-image: ${props => props.image
   ? `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${props.image})`
-  : null}
+  : 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);'}
   background-size: cover;
   background-position: center;
   `;

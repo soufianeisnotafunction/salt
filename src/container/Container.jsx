@@ -4,9 +4,9 @@ const Container = styled.div `
   width: ${props => window.screen.width <= 480
     ? 100 + '%'
     : window.screen.width >= 720
-        ? 85 + '%'
+        ? 70 + '%'
         : window.screen.width >= 960
-            ? 70 + '%'
+            ? 50 + '%'
             : null};
   margin: 0 auto;
   `;

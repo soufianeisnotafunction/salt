@@ -11,18 +11,18 @@ class App extends Component {
         return (
             <div className="App">
 
-              <Jumbotron height='450px' image='https://static.pexels.com/photos/320007/pexels-photo-320007.jpeg' title='Discover a whole new world !' subtitle={<Button>MichouJS</Button>} navbar={<Navbar/>}/>
+              <Jumbotron height='450px' title='Discover a whole new world !' subtitle="C'est trop cool !" navbar={<Navbar/>}/>
 
               <Container>
                 <Row>
-                    <Col desk={4} tab={12} mob={12}>
-                        <Button flat >Michou</Button>
+                    <Col desk={4} tab={12} mob={12} justify='center'>
+                        <Button flat>MICHOU</Button>
                     </Col>
-                    <Col desk={4} tab={12} mob={12}>
-                      <Button flat >Michou</Button>
+                    <Col desk={4} tab={12} mob={12} justify='center'>
+                      <Button flat>MICHOU</Button>
                     </Col>
-                    <Col desk={4} tab={12} mob={12}>
-                        <Button flat >Michou</Button>
+                    <Col desk={4} tab={12} mob={12} justify='center'>
+                        <Button flat>MICHOU</Button>
                     </Col>
                 </Row>
               </Container>
